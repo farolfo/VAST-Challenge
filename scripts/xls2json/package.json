@@ -1,0 +1,14 @@
+{
+  "name": "xls2json",
+  "version": "1.0.0",
+  "description": "XLS to JSON",
+  "main": "xls2json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xls-to-json": "^0.4.0"
+  }
+}
