@@ -1203,7 +1203,10 @@ minor-latin;color:windowtext'>Limit your response to no more than 8 images and
 
 <p>For this question we will build 4 bar charts, one per each chemical. Each chart will have the facotries in the x axis and the chemical's prescence in the air in the y axis.</p>
 
+<p>We will perform this implementation with the data truncated with a value that is bigger than the max. value present in the quartiles of the boxplots of these reading samples. To make a long story short, we will keep the values that are lower than 2 in the readings removing a lot of outliers.</p>
+
 <p>We will make usage of the wind direction on this calculations (we will not use the wind speed because we only want to see if the wind came from the factory to the sensor's position, so the speed would only tell if the chemical came faster or slower, but it would eventually be present on the sensor).</p>
+
 <p>We will also add a tolerance of 30 degrees, this means that if the wind direction is in the same direction than the vector that goes from the factory to the sensor (with a 15 degrees tolerance per each side), then the chemical reading will be attributed to that factory.</p>
 
 <p>For the Chlorodinine:</p>
@@ -1216,8 +1219,7 @@ minor-latin;color:windowtext'>Limit your response to no more than 8 images and
 <svg id="m3Methylosmolene" width="500" height="500"></svg>
 
 <p>From these charts we can see that:<br><br>
-- All the companies produce a big amount of chemicals, there is no company that can be dismissed 100%. We could only note that RoadRunner and Kasios produce a low level of AGOC-3A and Methylosmolene in comparission with the other two.<br>
-- All the companies produce a similar amount of Appluimonia, with Indigo and Radiance at the top.<br>
+- All the companies produce a big amount of chemicals, there is no company that can be dismissed 100%. We could only note that RoadRunner and Kasios produce a low level of the four chemicals in comparission with the other two.<br>
 - Indogo and Radiance produce the biggest amount of chemicals.<br>
 </p>
 
